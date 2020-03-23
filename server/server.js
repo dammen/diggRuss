@@ -2,7 +2,7 @@ var app = require('express')();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-server.listen(8080);
+server.listen(5000);
 console.log("server listening")
 io.on('connection', function (socket) {
     socket.on('join', function (data) {
